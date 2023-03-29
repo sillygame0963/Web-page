@@ -1,0 +1,88 @@
+.background {
+  /*general bg */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+
+  /* PC */
+  /* image bg */
+  background-image: url("https://imageio.forbes.com/specials-images/imageserve/5e25ebb5a854780006cb4673/Successful-group-of-business-people-at-work-in-office/960x0.jpg?format=jpg&width=960");
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+
+.Textbg {
+  color: white;
+  font-size: 90px;
+  text-align: center;
+}
+
+.Parabg {
+  font-size: 20px;
+  text-align: center;
+  margin: 0 500px 0px 500px;
+  padding: auto;
+}
+
+/* MOBILE */
+
+.background-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://imageio.forbes.com/specials-images/imageserve/5e25ebb5a854780006cb4673/Successful-group-of-business-people-at-work-in-office/960x0.jpg?format=jpg&width=960");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.Textbg-mobile {
+  align-items: center;
+  color: white;
+}
+
+@media only screen and (max-width: 1023px) {
+  .background {
+    display: none;
+  }
+
+  .Textbg {
+    display: none;
+  }
+  .Parabg {
+    display: none;
+  }
+  .background-mobile {
+    display: block;
+    height: 72.2vh;
+  }
+
+  .Textbg-mobile {
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  .background-mobile {
+    display: none;
+  }
+
+  .Textbg-mobile {
+    display: none;
+  }
+
+  .Parabg-mobile {
+    display: none;
+  }
+}

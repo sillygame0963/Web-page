@@ -1,0 +1,30 @@
+.bg {
+  background-color: #f5f7f8;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  display: flex;
+  margin-top: 50px;
+  border-bottom: 2px solid black;
+  padding: 0 100px;
+}
+
+.footer-item {
+  margin: 30px 50px;
+}
+
+.footer-item1 {
+  margin-left: 500px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.footer-item2 {
+  margin-left: 300px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}

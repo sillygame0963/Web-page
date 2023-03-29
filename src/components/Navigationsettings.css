@@ -1,0 +1,154 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #39373b;
+  border-bottom: 2px solid black;
+  overflow: auto;
+  top: 0;
+}
+
+.nav-list {
+  padding: 0 10px;
+  margin: 30px 16px;
+}
+
+/* Navigation items */
+.nav-item {
+  color: white !important;
+  list-style: none;
+  margin: 0 30px;
+  display: inline-block;
+  decoration: none;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.nav-item1 {
+  color: white !important;
+}
+
+/* Buttons */
+.button1 {
+  padding: 10px;
+  border-radius: 8px;
+  transition-duration: 0.5s;
+}
+
+.button1:hover {
+  background-color: rgba(152, 151, 151, 0.6);
+  border: 2px solid light gray;
+}
+
+.button2 {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 8px;
+  transition-duration: 0.5s;
+  background-color: greenyellow;
+  color: rgb(171, 171, 171);
+}
+
+.button2:hover {
+  background-color: rgb(110, 234, 178);
+  color: black;
+}
+
+/* mobile nav */
+
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 320px;
+  max-width: 100%;
+  background-color: white;
+  transform: translateX(-100%);
+  transition: transform linear 0.2s;
+}
+
+.active {
+  transform: translateX(0);
+  transition: transform linear 0.2s;
+}
+
+/* NAVIGATION MOVING */
+
+.nav-list-mobile {
+  margin-top: 24px;
+}
+
+.nav-item-mobile {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px 0;
+}
+
+/* ICONS */
+
+.Icon {
+  margin-top: -2px;
+  margin-left: 5px;
+  color: white;
+  padding: 8px;
+  display: none;
+  font-size: 30px;
+}
+
+.Icon1 {
+  color: #666;
+  width: 28px;
+  height: 28px;
+  right: 1rem;
+  top: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  margin-top: 14px;
+  margin-left: 270px;
+}
+
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  animation: fadeIn linear 0.2s;
+}
+
+.nav-mobile-input {
+  display: none;
+}
+
+.nav-mobile-input:checked ~ .nav-overlay {
+  display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1023px) {
+  .Icon {
+    display: block;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+  .nav-list {
+    display: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

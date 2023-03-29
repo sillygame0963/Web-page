@@ -1,0 +1,84 @@
+.bg {
+  background-color: #f5f7f8;
+}
+.obj-content {
+  display: flex;
+  flex-direction: column;
+  margin: 200px 0;
+  padding: 0 600px;
+  text-align: center;
+}
+
+.obj {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  margin-top: -100px;
+}
+
+.obj-item {
+  padding: 100px;
+}
+
+.feedback-content {
+  text-align: center;
+  margin: 100px 0;
+}
+
+/*name and email*/
+.feedback-form {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -100px;
+}
+
+/*name and email*/
+.form-item {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 100px;
+  border-bottom: 1px solid #ccc;
+  margin-top: -50px;
+}
+
+/*messages*/
+.feedback-form2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -100px;
+}
+/*messages*/
+.form-item2 {
+  display: flex;
+  padding: 15px;
+  justify-items: center;
+  align-items: center;
+  min-width: 90px;
+  margin-left: -280px;
+}
+
+#message {
+  resize: none;
+}
+
+.Button {
+  background-color: #379cf0;
+  display: flex;
+  justify-content: center;
+  margin-left: 850px;
+  margin-right: 850px;
+  border: 2px solid black;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  margin-top: 50px;
+  color: white;
+}
+
+.Button:hover {
+  background-color: pink !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  color: black;
+}
